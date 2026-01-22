@@ -14,7 +14,7 @@ def DDAline(x1,y1,x2,y2):
     if(abs(dx)>abs(dy)):
         step = abs(dx)
     else:
-        step = abs(dx)
+        step = abs(dy)
     xinc = dx/step
     yinc = dy/step
     x = x1
