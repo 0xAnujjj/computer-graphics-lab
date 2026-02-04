@@ -15,7 +15,7 @@ def rotation(x1, y1, x2, y2, theta):
     y22 = x2* math.sin(angle_rad) + y2* math.cos(angle_rad)
 
     pygame.draw.line(screen, (255,255,150),(x2,y2),(x22,y22), width = 5)
-    
+    print(x22, y22)    
 
 def main():
     while True:
@@ -24,7 +24,7 @@ def main():
                 pygame.quit()
                 sys.exit()
             screen.fill((0,0,0))
-        rotation(100,100,200,200, 45) #scaling with a bend
+        rotation(100,100,200,200, 20) #scaling with a bend
         pygame.display.flip()
 
 if __name__ == "__main__":

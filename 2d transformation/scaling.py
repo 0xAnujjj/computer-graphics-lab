@@ -11,7 +11,7 @@ def scaling(x1, y1, x2, y2, sx, sy):
     y22 =y2*sy
 
     pygame.draw.line(screen, (255,255,150),(x2,y2),(x22,y22), width = 5)
-    
+    print(x2,y2,x22,y22)
 
 def main():
     while True:
