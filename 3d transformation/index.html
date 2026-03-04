@@ -1,0 +1,73 @@
+  <!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>3D Transformation</title>
+      <style>
+        body {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 100vh;
+          margin: 0;
+          background-color:bisque;
+          background-size: cover;
+        }
+        h1 {
+          color: white;
+          font-size: 60px;
+          text-transform: uppercase;
+        }
+        .keyframes-demo {
+          width: 50px;
+          height: 50px;
+          position: relative;
+          background-color:#e305ad;
+          animation: mymove 10s infinite;
+        }
+
+
+        
+        @keyframes mymove {
+          from {
+            top: 0px;
+          }
+          to {
+            top: 30px;
+            transform: rotateZ(90deg)  rotateY(90deg);
+          }
+        } 
+        
+
+        .container {
+          perspective: 50px;
+        }
+
+        .object {
+          width: 300px;
+          height: 200px;
+          display: flex;
+          align-items: center;
+          background-color: #e305ad;
+          transform-style: preserve-3d;
+          animation: rotateAnimation 5s infinite linear;
+        }
+
+      
+      </style>
+    </head>
+    <body>
+      <div class="container">
+        
+        <div class="keyframes-demo"></div>
+        <!-- <div class="object">
+          <marquee>
+            <h1>HELLO WORLD II</h1>
+          </marquee>
+        </div> -->
+      </div>
+      <h1>This is title</h1>
+      <p><br> paragraph</p>
+    </body>
+  </html>
